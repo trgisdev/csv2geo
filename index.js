@@ -63,9 +63,6 @@ class csv2geo {
                     let currentRow = csvArr[i]
                     let lat = currentRow[latIndex]
                     let lon = currentRow[lonIndex]
-
-                    fieldNames.splice(lonIndex,1)
-                    fieldNames.splice(latIndex,1)
                     
                     let currentGeojson = {
                             "type": "Feature",
