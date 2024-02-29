@@ -24,19 +24,26 @@ const possibleLatitudeNames = [
 class csv2geo {
 
     geojson = (csvFile,options) => new Promise((resolve,reject)=>{
+
         let csvArr      = []
         let geojson     =   {
                                 "type": "FeatureCollection",
                                 "features": []
                             }
 
+
+        let latitudeFieldName   = options?.latitudeFieldName    ? options.latitudeFieldName    : null 
+        let longitudeFieldName  = options?.longitudeFieldName   ? options.longitudeFieldName   : null
+        let delimeter           = options?.delimeter            ? options.delimeter            : ","
+        let saveFilePath        = options?.saveFilePath         ? options.saveFilePath         : null
+
         fs.createReadStream(csvFile)
-        .pipe(parse({ delimiter: ",", from_line: 1 }))
+        .pipe(parse({ delimiter:delimeter, from_line: 1 }))
         .on("data", function (row) {
             csvArr.push(row)
         })
         .on("end", function () {
-            if(options == undefined){
+            if(latitudeFieldName == null || longitudeFieldName == null){
                 
                 let fieldNames = csvArr[0]
                 let lonIndex
@@ -79,10 +86,6 @@ class csv2geo {
                     
                 }
                 resolve(geojson)
-
-
-
-
 
             }
         })

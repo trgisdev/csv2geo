@@ -1,6 +1,6 @@
 {
   "name": "csv2geo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "It enables you to convert files in CSV format into geographic datasets",
   "main": "index.js",
   "scripts": {
