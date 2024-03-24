@@ -1,6 +1,6 @@
 {
   "name": "csv2geo",
-  "version": "1.0.3",
+  "version": "1.0.41",
   "description": "It enables you to convert files in CSV format into geographic datasets",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,6 @@
   "homepage": "https://github.com/trgisdev/csv2geo",
   "dependencies": {
     "csv-parse": "^5.5.3",
-    "csv2geo": "^1.0.0",
     "fs": "^0.0.1-security"
   }
 }
