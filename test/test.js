@@ -22,3 +22,13 @@ csv2geo.kml('./example.csv',{saveFilePath:'test.kml'})
 .catch((err)=>{
     console.log(err)
 })
+
+csv2geo.gpx('./example.csv',{saveFilePath:'test.gpx'})
+.then((res)=>{
+    
+    console.log(res)
+
+})
+.catch((err)=>{
+    console.log(err)
+})

@@ -1,7 +1,7 @@
 {
   "name": "csv2geo",
-  "version": "1.0.42",
-  "description": "It enables you to convert files in CSV format into geographic datasets like geojson and kml",
+  "version": "1.0.43",
+  "description": "It enables you to convert files in CSV format into geographic datasets like geojson, kml and gpx",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

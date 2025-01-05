@@ -93,7 +93,37 @@ csv2geo.kml('./example.csv', {
 });
 ```
 
+## GPX Conversion
+
+Convert CSV to GPX format effortlessly with csv2geo:
+
+
+
+
+```javascript
+const csv2geo = require('csv2geo');
+
+csv2geo.gpx('./example.csv', {
+    saveFilePath: "./output.gpx"
+})
+.then((gpx) => {
+    console.log('GPX created and saved to file:', gpx);
+})
+.catch((err) => {
+    console.error('Error:', err);
+});
+```
+
+    
+    
+## Options
+
+- **latitudeFieldName** (optional): Specify the name of the latitude field in your CSV if it's not automatically detected.
+- **longitudeFieldName** (optional): Specify the name of the longitude field in your CSV if it's not automatically detected.
+- **delimeter** (optional): The delimiter used in your CSV file (default is ,).
+- **saveFilePath** (optional): The path where the output GeoJSON will be saved. If not provided, the GeoJSON will only be returned as an object.
+
   
 ## Shapefile and GPX Conversion (Coming Soon)
 
-The **shapefile()** and **gpx()** methods are currently under development and will be available soon.
+The **shapefile()** method are currently under development and will be available soon.
