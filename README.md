@@ -15,7 +15,7 @@ npm install csv2geo
 ```
 
   
-## Geojson Conversion 
+# Geojson Conversion 
 
 Example Usage
 Here's a simple example of how to use csv2geo to convert a CSV file into GeoJSON format. You don't need to provide any options, the tool will automatically detect the latitude and longitude fields in your CSV.
@@ -37,7 +37,7 @@ csv2geo.geojson('./example.csv')
 ```
 
 
-## Geojson Conversion with Options
+# Geojson Conversion with Options
 
 If your CSV file uses custom field names for latitude and longitude, or has a different delimiter, you can pass these options into the method.
 
@@ -75,7 +75,7 @@ csv2geo.geojson('./example.csv', {
 - **saveFilePath** (optional): The path where the output GeoJSON will be saved. If not provided, the GeoJSON will only be returned as an object.
 
   
-## KML Conversion
+# KML Conversion
 
 You can also convert **CSV** to **KML** format using the same method:
 
@@ -102,7 +102,7 @@ csv2geo.kml('./example.csv', {
 - **delimeter** (optional): The delimiter used in your CSV file (default is ,).
 - **saveFilePath** (optional): The path where the output GeoJSON will be saved. If not provided, the GeoJSON will only be returned as an object.
 
-## GPX Conversion
+# GPX Conversion
 
 Convert CSV to GPX format effortlessly with csv2geo:
 
@@ -125,7 +125,7 @@ csv2geo.gpx('./example.csv', {
 
     
     
-# Options
+## Options
 
 - **latitudeFieldName** (optional): Specify the name of the latitude field in your CSV if it's not automatically detected.
 - **longitudeFieldName** (optional): Specify the name of the longitude field in your CSV if it's not automatically detected.
