@@ -93,6 +93,15 @@ csv2geo.kml('./example.csv', {
 });
 ```
 
+    
+    
+## Options
+
+- **latitudeFieldName** (optional): Specify the name of the latitude field in your CSV if it's not automatically detected.
+- **longitudeFieldName** (optional): Specify the name of the longitude field in your CSV if it's not automatically detected.
+- **delimeter** (optional): The delimiter used in your CSV file (default is ,).
+- **saveFilePath** (optional): The path where the output GeoJSON will be saved. If not provided, the GeoJSON will only be returned as an object.
+
 ## GPX Conversion
 
 Convert CSV to GPX format effortlessly with csv2geo:
