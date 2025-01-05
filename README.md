@@ -1,7 +1,7 @@
 
 # csv2geo
 
-csv2geo is a Node.js module that allows you to convert **CSV** files into geographic data formats such as **GeoJSON**, **KML**, and more.
+csv2geo is a Node.js module that allows you to convert **CSV** files into geographic data formats such as **GeoJSON**, **KML**, and **GPX**.
 
 
 
@@ -15,7 +15,7 @@ npm install csv2geo
 ```
 
   
-## Example Usage (geojson) 
+## Geojson Conversion 
 
 Example Usage
 Here's a simple example of how to use csv2geo to convert a CSV file into GeoJSON format. You don't need to provide any options, the tool will automatically detect the latitude and longitude fields in your CSV.
@@ -37,7 +37,7 @@ csv2geo.geojson('./example.csv')
 ```
 
 
-## Example with Options (geojson) 
+## Geojson Conversion with Options
 
 If your CSV file uses custom field names for latitude and longitude, or has a different delimiter, you can pass these options into the method.
 
@@ -125,7 +125,7 @@ csv2geo.gpx('./example.csv', {
 
     
     
-## Options
+# Options
 
 - **latitudeFieldName** (optional): Specify the name of the latitude field in your CSV if it's not automatically detected.
 - **longitudeFieldName** (optional): Specify the name of the longitude field in your CSV if it's not automatically detected.
@@ -133,6 +133,6 @@ csv2geo.gpx('./example.csv', {
 - **saveFilePath** (optional): The path where the output GeoJSON will be saved. If not provided, the GeoJSON will only be returned as an object.
 
   
-## Shapefile and GPX Conversion (Coming Soon)
+## Shapefile
 
 The **shapefile()** method are currently under development and will be available soon.

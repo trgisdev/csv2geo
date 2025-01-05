@@ -1,6 +1,6 @@
 {
   "name": "csv2geo",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "description": "It enables you to convert files in CSV format into geographic datasets like geojson, kml and gpx",
   "main": "index.js",
   "scripts": {
